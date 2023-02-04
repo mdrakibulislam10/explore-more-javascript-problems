@@ -19,7 +19,7 @@ function ticketPrice(ticketQuantity) {
         return price;
     }
 
-    else if (ticketQuantity <= 200) {
+    else if (ticketQuantity <= 200) { // 101-200
         const first100Price = 100 * first100Rate;
         const restTicketQuantity = ticketQuantity - 100;
         const restTicketPrice = restTicketQuantity * second100Rate;
@@ -40,4 +40,4 @@ function ticketPrice(ticketQuantity) {
 };
 
 const price = ticketPrice(250);
-console.log(price);
+console.log("total price:", price);
